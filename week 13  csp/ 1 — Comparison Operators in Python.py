@@ -5,9 +5,7 @@
 # ==, !=, >, <, >=, <=
 
 # Key Notes:
-
 # Comparison operators compare two values and return either True or False.
-
 # Remember: = is assignment, while == is comparison.
 
 a = 3
@@ -21,15 +19,37 @@ print(a >= b)   # False
 print(a <= b)   # True
 
 
-#predict the output of the following comparisons:
-10 > 5
-7 == 2 * 3 + 1
-8 != 8
-4 <= 2 + 2
+#  Predict the output of the following comparisons:
+print(10 > 5)          # True
+print(7 == 2 * 3 + 1)  # True (7 == 7)
+print(8 != 8)          # False
+print(4 <= 2 + 2)      # True (4 <= 4)
 
-# Write 3 examples that result in True and 3 that result in False.
 
-# Create a simple grade-checking condition:
+#  Write 3 examples that result in True:
+print(15 > 10)          # True
+print("cat" != "dog")   # True
+print(5 + 5 == 10)      # True
 
-# practice problem :
-# where a student must check if their score is greater than or equal to 60 to pass a test.# The password must be at least 8 characters long and contain at least one digit.password = "mypassword1"
+#  Write 3 examples that result in False:
+print(12 < 8)           # False
+print(9 == 5)           # False
+print(7 >= 10)          # False
+
+
+#  Create a simple grade-checking condition:
+score = 75
+print(score >= 60)   # True → student passed
+
+# Optional: Add a message for clarity
+if score >= 60:
+    print("You passed the test!")
+else:
+    print("You failed the test.")
+
+
+# Bonus: Password validation example
+password = "mypassword1"
+
+# Check if the password is at least 8 characters long AND has at least one digit
+print(len(password) >= 8 and any(char.isdigit() for char in password))  # True
