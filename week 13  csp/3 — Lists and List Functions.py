@@ -66,6 +66,35 @@ print(len(lists_of_items)) #1000 items in the list
 lists_of_items.extend(range(1001,2001)) #adds numbers from 1001 to 2000 to the list
 print(len(lists_of_items)) #2000 items in the list
 
+#why use lists? instead of creating seperate variables for each item, lists allow for easier data management, manipulation, and scalability, especially when dealing with large datasets.
+
+#sets and tuples are other types of collections in Python, each with their own characteristics and use cases. Family in Python Sets examples:
+set1={1, 2, 3, 4, 5}
+set2={'apple', 'banana', 'cherry'}
+print(set1)
+print(set2)
+print(type(set1)) # <class 'set'>
+# why use sets instead of lists? sets automatically handle duplicate values and provide efficient membership testing, making them ideal for scenarios where uniqueness and fast lookups are required.
+#examples of tuples
+set_with_duplicate={1, 2, 2, 3, 4, 4, 5}
+print(set_with_duplicate) # {1, 2, 3, 4,
+# sets are useful for memebership testing and eliminating duplicate values from a collection
+print(3 in set1) # True
+print(6 in set1) # False
+# # Tuples examples:
+tuple1 = (1, 2, 3, 4, 5)
+tuple2 = ('apple', 'banana', 'cherry')
+print(tuple1)
+print(tuple2)
+print(type(tuple1)) # <class 'tuple'>
+# why use tuples instead of lists? tuples are immutable, making them suitable for fixed collections of items that should not be changed, and they can also be used as keys in dictionaries due to their immutability.
+# # Tuples are immutable, meaning once created, their content cannot be changed
+# # Tuples are defined by parentheses ()
+# # Items in a tuple can be of any data type, and a single tuple can contain items of different data types
+# # Items in a tuple are indexed, starting from 0 for the first item, 1 for the second item, and so on
+# # You can also use negative indexing to access items from the end of the tuple, with -1 being the last item, -2 being the second last item, and so on
+social_security_numbers = (123456789, 987654321, 555667777)
+print(social_security_numbers[0]) # 123456789
 
 # # Practice Problems:
 
